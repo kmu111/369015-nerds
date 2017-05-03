@@ -1,157 +1,204 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Нёрдс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Нёрдс : каталог</title>
+</head>
+<body>
   <header class="main-header">
-      <div class="container">
-       <div class="logo">
-  	    <img src="http://placehold.it/160x66" width="160" height="66" alt="">
-         </div>
-    <nav class="main-navigation">
-      <ul>
-  	   <li>
-  		   <a href="#">Студия</a>
-       </li>
-  	   <li>
-  		   <a href="#">Клиенты</a>
-  	   </li>
-       <li>
-  		   <a href="#">Магазин</a>
-       </li>
-     	<li>
-  	    	<a href="#">Контакты</a>
-    	</li>
-  </ul> 	
-  </nav>
-  <div class="user-block">
-  	<a href="#">Корзина</a>
-  </div>
-  </div>
-  <h1 class="presentation">Магазин готовых шаблонов</h1>
-  </header>
+    <div class="container clearfix">
+      <div class="logo"> <img src="img/Catalog-img/nerds-logo.jpg" width="160" height="66" alt=""> </div>
+      <nav class="main-navigation">
+        <ul>
+          <li> <a href="#">Студия</a> </li>
+          <li> <a href="#">Клиенты</a> </li>
+          <li> <a href="#">Магазин</a> </li>
+          <li> <a href="#">Контакты</a> </li>
+        </ul>
+      </nav>
+      <div class="user-block"> <a href="#">Корзина</a> </div>
+    </div>
+    <h1 class="presentation">Магазин готовых шаблонов</h1> </header>
   <main>
-    <div class="container">
-     <div class="filters-block">
-        <h2>Стоимость:</h2>
-        <form action="" method="get">
-     <input type="range" name="cost" min="0" max="15000">
-      <div class="value-interval">
-      <div class="form-left">  
-        <form action="" method="post">   
-            <label for="from-field">От</label>   
-            <input type="text" name="enter-from" id="from-field" value="0">
-        </form>  
-      </div>        
-            <div class="form-right">  
-        <form action="" method="post">   
-            <label for="from-field">До</label>   
-            <input type="text" name="enter-before" id="before-field" value="15000">
-        </form>  
-      </div> 
-     </div>
-     <div class="grid-filter">
-    <h2>Сетка:</h2>
-    <form action="" method="post">
-    <label for="adaptive"></label>   
-      <input type="checkbox" name="adaptive" id="adaptive"> Адаптивная  
-    <label for="fiction"></label>  
-      <input type="checkbox" name="fix" id="fiction"> Фиксированная     
-    <label for="rubber"></label>
-      <input type="checkbox" name="adaptive" id="rubber"> Резиновая   
-    </div>
-     <div class="features-block">
-    </form>
-    <h2>Особенности:</h2>
-     <form action="" method="post">
-    <label for="slider">    </label>      
-      <input type="checkbox" name="adaptive" id="slider"> Слайдер    
-    <label for="advantages-block"></label>  
-      <input type="checkbox" name="adaptive" id="advantages-block"> Блок преимеществ 
-    <label for="news"></label>   
-      <input type="checkbox" name="adaptive" id="news"> Новости  
-    <label for="gallery"></label>
-      <input type="checkbox" name="adaptive" id="gallery"> Галерея  
-    <label for="basket-block"></label>      
-      <input type="checkbox" name="adaptive" id="Basket-block"> Корзина
-     </form>
-     <form action="" method="post">
-        <button type="submit">Показать</button>
-     </form>
-     </div>
-     <div class="catalog-box">
-       <div class="sorting-box">
-         <h2>Сортировать:</h2>
-       </div>
-       <div class="sorting-menu">
-        <form action="" method="post">
-          <button type="submit">По цене</button>
-          <button type="submit">По типу</button>
-          <button type="submit">По названию</button>
-        </form>
-        <div class="selection-block">
-             <form action="" method="post">
-          <button type="submit"></button>
-        </form>
-        </div>
-       </div>
-       </div>
-       <div class="main-sites">
-         <img src="http://placehold.it/160x66" width="350" height="615" alt="">
-       </div>
-        <div class="main-sites">
-          <img src="http://placehold.it/160x66" width="350" height="615" alt="">
-        </div>
-         <div class="main-sites">
-           <img src="http://placehold.it/160x66" width="350" height="615" alt="">
-         </div>
-          <div class="main-sites">
-            <img src="http://placehold.it/160x66" width="350" height="615" alt="">
-          </div>
-           <div class="main-sites">
-             <img src="http://placehold.it/160x66" width="350" height="615" alt="">
-           </div>
-            <div class="main-sites">
-              <img src="http://placehold.it/160x66" width="350" height="615" alt="">
+    <div class="container clearfix">
+        <section class="filters-block">
+          <h2 class="cost-name">Стоимость:</h2>
+          <form action="" method="get">
+            <input type="range" name="cost" min="0" max="15000">
+            <div class="value-interval">
+              <div class="form-left">
+                  <label for="from-field">От</label>
+                  <input type="text" name="enter-from" id="from-field" value="0">
+              </div>
+              <div class="form-right">
+                  <label for="from-field">До</label>
+                  <input type="text" name="enter-before" id="before-field" value="15000">
+              </div>
             </div>
-            <div class="paginaton">
-              <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">Следующая</a></li>
-              </ul>
+            <div class="grid-filter">
+              <h2>Сетка:</h2>
+                <label for="adaptive">Адаптивная</label>
+                <input type="checkbox" name="adaptive" id="adaptive"> 
+                <label for="fiction">Фиксированная</label>
+                <input type="checkbox" name="fix" id="fiction"> 
+                <label for="rubber">Резиновая</label>
+                <input type="checkbox" name="adaptive" id="rubber">
+            </div>  
+            <div class="features-block">
+              <h2>Особенности:</h2>
+                <label for="slider"> Слайдер</label>
+                <input type="checkbox" name="adaptive" id="slider"> 
+                <label for="advantages-block"> преимеществ</label>
+                <input type="checkbox" name="adaptive" id="advantages-block"> 
+                <label for="news">Блок</label>
+                <input type="checkbox" name="adaptive" id="news"> 
+                <label for="gallery">Новости</label>
+                <input type="checkbox" name="adaptive" id="gallery"> 
+                <label for="basket-block">Галерея</label>
+                <input type="checkbox" name="adaptive" id="Basket-block">
             </div>
-     </div>
+            <button type="submit">Показать</button>
+            </form>
+        </section><!--filters-block-->
+        <section class="catalog-content clearfix">
+          <section class="catalog-box clearfix">
+            <div class="sorting-box">
+              <h2 class="sorting">Сортировать:</h2> </div>
+            <div class="sorting-menu">
+              <form action="" method="post">
+                <button type="submit">По цене</button>
+                <button type="submit">По типу</button>
+                <button type="submit">По названию</button>
+              </form>
+              <div class="selection-block">
+                <form action="" method="post">
+                  <button type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </section><!--catalog-box-->
+          <div class="catalog-wrap">
+            <div class="catalog-item">
+              <div class="catalog-item-circles">
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+              </div>
+              <div class="catalog-item-img-sedona"> 
+                <img src="img/Catalog-img/img-sedona.jpg" width="350" height="615" alt=""> 
+              </div>
+              <div class="catalog-item-cost">
+                <h2>Sedona</h2>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="cost">9900 руб.</a>
+              </div>
+            </div><!--catalog-item-->
+              <div class="catalog-item">
+                <div class="catalog-item-circles">
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+              </div>
+              <div class="catalog-item-img-pink"> 
+                <img src="img/Catalog-img/img-pink.jpg" width="350" height="615" alt=""> 
+              </div>
+              <div class="catalog-item-cost">
+                <h2>Pink app</h2> 
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a href="#" class="cost"> 9900 руб.</a>
+              </div>
+            </div><!--catalog-item-->
+            <div class="catalog-item">
+              <div class="catalog-item-circles">
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+              </div>
+              <div class="catalog-item-img-barbershop"> 
+                <img src="img/Catalog-img/img-barbershop.jpg" width="350" height="615" alt=""> 
+              </div>
+              <div class="catalog-item-cost">
+                <h2>Barbershop</h2> 
+                <p>Салон красоты. Для мужчин, да.</p>
+                <a href="" class="cost">9900 руб.</a>
+              </div>
+            </div><!--catalog-item-->   
+            <div class="catalog-item">
+              <div class="catalog-item-circles">
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+              </div>
+              <div class="catalog-item-img-mishka"> 
+                <img src="img/Catalog-img/img-mishka.jpg" width="350" height="615" alt="">
+              </div>
+              <div class="catalog-item-cost">
+                <h2>Mishka</h2> 
+                <p>Интернет-магазин вязаных игрушек</p>
+              <a href="#" class="cost">9900 руб.</a>
+              </div>
+            </div><!--catalog-item-->   
+            <div class="catalog-item">
+              <div class="catalog-item-circles">
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+              </div>
+            <div class="catalog-item-img-aplus"> 
+              <img src="img/Catalog-img/img-aplus.jpg" width="350" height="615" alt=""> 
+            </div>
+            <div class="catalog-item-cost">
+                <h2>A plus</h2> 
+                <p>Лендинг курсов повышения квалификации</p>
+                <a href="#" class="cost">9900 руб.</a>
+              </div>
+            </div><!--catalog-item--> 
+            <div class="catalog-item">
+              <div class="catalog-item-circles">
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+                <span class="catalog-item-circle"></span>
+              </div>
+            <div class="catalog-item-img-kvast"> 
+            <img src="img/Catalog-img/img-kvast.jpg" width="350" height="615" alt=""> 
+            </div>
+              <div class="catalog-item-cost">
+                <h2>Кваст</h2> 
+                <span>Промо-сайт производителя крафтового кваса</span>
+                <a href="#" class="cost">9900 руб.</a>
+              </div>
+             </div><!--catalog-item-->
+          </div><!--catalog-wrap-->
+          <div class="pagination">
+            <ul>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Следующая</a></li>
+            </ul>
+          </div><!--pagination-->
+        </section><!--catalog-content-->
+      </section><!--catalog-->
+    </div><!--container-->
   </main>
-  
-    <div class="map">
-      <img src="http://placehold.it/1440x416" width="1440" height="416" alt="">
-    <section class="map-contacts">
-      Nerds design studio<br>
-      191186, Санкт-Петербург,
-      ул. Б. Конюшенная, д. 19/8<br>
-      тел. +7 (812) 257-75-75
-      <a href="#">Напишите нам</a>
-    </section>
-      <div class="marker">
-        <img src="http://placehold.it/161x193" width="161" height="193" alt="">
-      </div>
-    </div>
-  <footer class="main-footer">
-  	<div class="container">
-  		<section class="footer-social">
-  			<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-       	 	<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-       	 	<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+  <div class="navigation">
+    <div class="map"> <img src="img/map.jpg" width="1440" height="416"> </div>
+    <section class="map-contacts"> Nerds design studio
+      <br> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      <br> тел. +7 (812) 257-75-75 <a href="#">Напишите нам</a> </section>
+    <div class="marker"> <img src="http://placehold.it/161x193" width="161" height="193"> </div>
+  </div>
+ <footer class="main-footer">
+    <div class="container clearfix">
+      <section class="footer-social">
+        <a class="social-btn so cial-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <p>Давайте жить дружно, это выгодно!
+          Скидка 10% для друзей из социальных сетей.</p>
       </section>
-      <div class="discount-block">
-       	 	<p>Давайте дружить, это выгодно!
-       	 	Скидка 10% для друзей из социальных сетей.</p>
-  		</div>
-  	</div>
+    </div>
   </footer>
-  </body>
+</body>
 </html>

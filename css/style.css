@@ -1,0 +1,226 @@
+* {
+ margin: 0;
+ padding: 0;
+ outline: none;
+}
+
+body {
+	min-width: 1200px;
+}
+
+.main-header {
+	background-color: #eeeeee;
+}
+
+.web-sites {
+	font-size: 24px;
+	line-height: 30px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.apps {
+	font-size: 24px;
+	line-height: 30px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.presentations {
+	font-size: 24px;
+	line-height: 30px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.logo {
+	width: 160px;
+	float: left;
+	margin-right: 40px;
+
+}
+
+.main-navigation {
+	width: 760px;
+	margin-left: 40px;
+	float: left;
+	height: 70px;
+	line-height: 70px;
+}
+
+.main-navigation li {
+	display: inline-block;
+	padding-right: 57px; 
+}
+
+.user-block {
+	width: 160px;
+	height: 70px;
+	float: right;
+	line-height: 70px;
+}
+
+.slide-text-1 {
+	width: 380px;
+	float: left;
+	margin-top: 86px;
+}
+
+.main-photo {
+	float: right;
+	width: 700px;
+}
+
+.slider-2, 
+.slider-3 {
+	display: none;
+}
+
+.service-item-1 {
+	width: 300px;
+	float: left;
+	padding-top: 83px;
+	padding-right: 110px;
+	padding-bottom: 81px;
+}
+
+.service-item-2 {
+	width: 300px;
+	float: left;
+	padding-top: 83px;
+	padding-right: 110px; 
+	padding-bottom: 81px;
+}
+
+.service-item-3 {
+	width: 300px;
+	float: left;
+	padding-top: 83px;
+	padding-bottom: 81px;
+}
+
+.about-us {
+	padding-bottom: 83px; 
+}
+
+.description {
+	width: 660px;
+	float: left;
+}
+
+.statistics {
+	width: 380px;
+	float: right;
+}
+
+.customers {
+	padding-bottom: 55px;
+}
+
+.customers a {
+	padding-right: 40px;
+}
+
+.map-contacts {
+	width: 220px;
+	height: 202px;
+	padding: 50px;
+}
+
+.map {
+	text-align: center;
+}
+
+.marker {
+	width: 161px;
+	height: 193px;
+}
+
+.footer-social {
+	width: 960px;
+	height: 81px;
+	float: left;
+	padding-top: 69px;
+}
+
+.footer-social p {
+	float: right;
+}
+
+.presentation {
+	text-align: center;
+}
+
+
+.cost-name {
+	width: 260px;
+	float: right;
+	
+}
+
+.filters-block {
+	width: 260px;
+	float: left;s
+}
+
+.catalog-content {
+	width: 760px;
+	float: right;
+}
+
+.sorting-box {
+	width: 300px;
+}
+
+.sorting {
+	float: left;
+}
+
+.sorting-menu {
+	float: right;
+}
+
+.catalog-wrap {
+	margin: 0 -20px;
+}
+
+.catalog-item {
+	margin: 0 20px; 
+	width: 360px;
+	float: left;
+	position: relative;
+}
+
+.catalog-item-cost {
+	width: 351px;
+	background-color: #eeeeee; 
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+
+.catalog-item:hover .catalog-item-cost {
+	display: block;
+}
+
+.pagination {
+	float:left;
+}
+
+.pagination li {
+	display: inline-block;
+}
