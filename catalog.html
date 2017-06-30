@@ -2,13 +2,18 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Нёрдс : каталог</title>
 </head>
 <body>
-  <header class="main-header">
+  <header class="main-header main-header--pdb">
     <div class="container clearfix">
-      <div class="logo"> <img src="img/Catalog-img/nerds-logo.jpg" width="160" height="66" alt=""> </div>
+      <div class="logo"> 
+        <a href="../369015-nerds/index.html">
+         <img src="img/Catalog-img/nerds-logo.png" width="160" height="66" alt="">
+           </a>
+      </div>
       <nav class="main-navigation">
         <ul>
           <li> <a href="#">Студия</a> </li>
@@ -17,48 +22,59 @@
           <li> <a href="#">Контакты</a> </li>
         </ul>
       </nav>
-      <div class="user-block"> <a href="#">Корзина</a> </div>
+      <div class="user-block"> 
+        <a href="#">Корзина</a>
+      </div>
     </div>
-    <h1 class="presentation">Магазин готовых шаблонов</h1> </header>
-  <main>
+    <h1 class="presentation">Магазин готовых шаблонов</h1> 
+    </header>
+  <main class="main-catalog">
     <div class="container clearfix">
         <section class="filters-block">
           <h2 class="cost-name">Стоимость:</h2>
-          <form action="" method="get">
+          <form action="#" method="get">
             <input type="range" name="cost" min="0" max="15000">
             <div class="value-interval">
-              <div class="form-left">
-                  <label for="from-field">От</label>
-                  <input type="text" name="enter-from" id="from-field" value="0">
-              </div>
-              <div class="form-right">
-                  <label for="from-field">До</label>
-                  <input type="text" name="enter-before" id="before-field" value="15000">
-              </div>
-            </div>
+                  <label for="form-field-1">От</label>
+                  <input class="input-interval" type="text" name="enter-from" id="form-field-1" value="0">
+                  <label for="form-field-2">До</label>
+                  <input class="input-interval" type="text" name="enter-before" id="form-field-2" value="15000">
+            </div><!--value-interval-->
             <div class="grid-filter">
               <h2>Сетка:</h2>
-                <label for="adaptive">Адаптивная</label>
-                <input type="checkbox" name="adaptive" id="adaptive"> 
-                <label for="fiction">Фиксированная</label>
-                <input type="checkbox" name="fix" id="fiction"> 
-                <label for="rubber">Резиновая</label>
-                <input type="checkbox" name="adaptive" id="rubber">
+                <div class="form-item">
+                 <input class="input-circle" type="checkbox" name="adaptive" id="adaptive" checked>
+                 <label class="label-circle" for="adaptive">Адаптивная</label>
+                 </div>
+                  <div class="form-item"> 
+                    <input class="input-circle" type="checkbox" name="fix" id="fiction">
+                    <label class="label-circle" for="fiction">Фиксированная</label>
+                </div> 
+                  <div class="form-item">
+                    <input class="input-circle" type="checkbox" name="adaptive" id="rubber">
+                    <label class="label-circle" for="rubber">Резиновая</label>
+                  </div>
             </div>  
             <div class="features-block">
               <h2>Особенности:</h2>
-                <label for="slider"> Слайдер</label>
-                <input type="checkbox" name="adaptive" id="slider"> 
-                <label for="advantages-block"> преимеществ</label>
-                <input type="checkbox" name="adaptive" id="advantages-block"> 
-                <label for="news">Блок</label>
-                <input type="checkbox" name="adaptive" id="news"> 
-                <label for="gallery">Новости</label>
-                <input type="checkbox" name="adaptive" id="gallery"> 
-                <label for="basket-block">Галерея</label>
-                <input type="checkbox" name="adaptive" id="Basket-block">
+                <div class="form-item">
+                  <input class="input-circle-1" type="checkbox" name="adaptive" id="slider">
+                  <label class="label-circle-1" for="slider">Слайдер</label>
+                </div>
+                <div class="form-item">
+                  <input class="input-circle-1" type="checkbox" name="adaptive" id="advantages-block"> 
+                  <label class="label-circle-1" for="advantages-block">Блок преимуществ</label>
+                </div>
+                <div class="form-item">
+                  <input class="input-circle-1" type="checkbox" name="adaptive" id="gallery"> 
+                  <label class="label-circle-1" for="gallery">Новости</label>             
+                </div>
+                <div class="form-item">
+                  <input class="input-circle-1" type="checkbox" name="adaptive" id="basket-block">
+                  <label class="label-circle-1" for="basket-block">Галерея</label>
+                </div>
             </div>
-            <button type="submit">Показать</button>
+            <button class="submit-item" type="submit">Показать</button>
             </form>
         </section><!--filters-block-->
         <section class="catalog-content clearfix">
@@ -66,13 +82,13 @@
             <div class="sorting-box">
               <h2 class="sorting">Сортировать:</h2> </div>
             <div class="sorting-menu">
-              <form action="" method="post">
+              <form action="#" method="post">
                 <button type="submit">По цене</button>
                 <button type="submit">По типу</button>
                 <button type="submit">По названию</button>
               </form>
               <div class="selection-block">
-                <form action="" method="post">
+                <form action="#" method="post">
                   <button type="submit"></button>
                 </form>
               </div>
@@ -86,11 +102,11 @@
                 <span class="catalog-item-circle"></span>
               </div>
               <div class="catalog-item-img-sedona"> 
-                <img src="img/Catalog-img/img-sedona.jpg" width="350" height="615" alt=""> 
+                <img class="catalog-picture" src="img/Catalog-img/img-sedona.jpg" width="360" height="615" alt=""> 
               </div>
               <div class="catalog-item-cost">
                 <h2>Sedona</h2>
-                <p>Информационный сайт для туристов</p>
+                <p>Информационный сайт<br>для туристов</p>
                 <a href="#" class="cost">9900 руб.</a>
               </div>
             </div><!--catalog-item-->
@@ -101,11 +117,11 @@
                 <span class="catalog-item-circle"></span>
               </div>
               <div class="catalog-item-img-pink"> 
-                <img src="img/Catalog-img/img-pink.jpg" width="350" height="615" alt=""> 
+                <img class="catalog-picture" src="img/Catalog-img/img-pink.jpg" width="360" height="615" alt=""> 
               </div>
               <div class="catalog-item-cost">
                 <h2>Pink app</h2> 
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
                 <a href="#" class="cost"> 9900 руб.</a>
               </div>
             </div><!--catalog-item-->
@@ -116,12 +132,12 @@
                 <span class="catalog-item-circle"></span>
               </div>
               <div class="catalog-item-img-barbershop"> 
-                <img src="img/Catalog-img/img-barbershop.jpg" width="350" height="615" alt=""> 
+                <img class="catalog-picture" src="img/Catalog-img/img-barbershop.jpg" width="360" height="615" alt=""> 
               </div>
               <div class="catalog-item-cost">
                 <h2>Barbershop</h2> 
                 <p>Салон красоты. Для мужчин, да.</p>
-                <a href="" class="cost">9900 руб.</a>
+                <a href="#" class="cost">9900 руб.</a>
               </div>
             </div><!--catalog-item-->   
             <div class="catalog-item">
@@ -131,7 +147,7 @@
                 <span class="catalog-item-circle"></span>
               </div>
               <div class="catalog-item-img-mishka"> 
-                <img src="img/Catalog-img/img-mishka.jpg" width="350" height="615" alt="">
+                <img class="catalog-picture" src="img/Catalog-img/img-mishka.jpg" width="360" height="615" alt="">
               </div>
               <div class="catalog-item-cost">
                 <h2>Mishka</h2> 
@@ -146,7 +162,7 @@
                 <span class="catalog-item-circle"></span>
               </div>
             <div class="catalog-item-img-aplus"> 
-              <img src="img/Catalog-img/img-aplus.jpg" width="350" height="615" alt=""> 
+              <img class="catalog-picture" src="img/Catalog-img/img-aplus.jpg" width="360" height="615" alt=""> 
             </div>
             <div class="catalog-item-cost">
                 <h2>A plus</h2> 
@@ -161,33 +177,30 @@
                 <span class="catalog-item-circle"></span>
               </div>
             <div class="catalog-item-img-kvast"> 
-            <img src="img/Catalog-img/img-kvast.jpg" width="350" height="615" alt=""> 
+            <img class="catalog-picture" src="img/Catalog-img/img-kvast.jpg" width="360" height="615" alt=""> 
             </div>
               <div class="catalog-item-cost">
                 <h2>Кваст</h2> 
-                <span>Промо-сайт производителя крафтового кваса</span>
+                <p>Промо-сайт производителя крафтового кваса</p>
                 <a href="#" class="cost">9900 руб.</a>
               </div>
              </div><!--catalog-item-->
           </div><!--catalog-wrap-->
           <div class="pagination">
-            <ul>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">Следующая</a></li>
-            </ul>
+              <a class="current" href="../369015-nerds/catalog.html">1</a>
+              <a class="btn-pag" href="#">2</a>
+              <a class="btn-pag" href="#">3</a>
+              <a id="btn-next" href="#">Следующая</a>
           </div><!--pagination-->
         </section><!--catalog-content-->
-      </section><!--catalog-->
     </div><!--container-->
   </main>
   <div class="navigation">
-    <div class="map"> <img src="img/map.jpg" width="1440" height="416"> </div>
+    <div class="map"> <img src="img/map.jpg" width="1440" height="416" alt="virtual-map"> </div>
     <section class="map-contacts"> Nerds design studio
       <br> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       <br> тел. +7 (812) 257-75-75 <a href="#">Напишите нам</a> </section>
-    <div class="marker"> <img src="http://placehold.it/161x193" width="161" height="193"> </div>
+    <div class="marker"> <img src="img/map-marker.png" width="231" height="190" alt="marker"> </div>
   </div>
  <footer class="main-footer">
     <div class="container clearfix">
